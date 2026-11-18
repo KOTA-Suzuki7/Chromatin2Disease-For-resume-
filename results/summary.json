@@ -1,0 +1,36 @@
+{
+  "status": "preliminary_random_trace_split_missingness_not_yet_controlled",
+  "task": "classify bags of 10 chromosome-6 traces as untreated or CTCF-depleted",
+  "dataset": {
+    "retained_graphs": 11488,
+    "untreated_graphs": 5283,
+    "ctcf_depleted_graphs": 6205,
+    "canonical_loci": 73,
+    "minimum_observed_loci": 37,
+    "contact_threshold_nm": 238,
+    "undirected_contact_edges": 2035993
+  },
+  "evaluation": {
+    "split": "random 70/15/15 trace split stratified by condition and run group",
+    "test_bags": 144,
+    "test_graphs": 1440,
+    "seeds": [11, 22, 33],
+    "bag_level": {
+      "roc_auc_mean": 0.8278677983539094,
+      "roc_auc_standard_deviation": 0.006573754073627607,
+      "average_precision_mean": 0.8309906047921065,
+      "accuracy_mean": 0.7222222222222223
+    },
+    "single_graph": {
+      "roc_auc_mean": 0.6370543981481482,
+      "roc_auc_standard_deviation": 0.0015310526146618546,
+      "average_precision_mean": 0.6220585082436395,
+      "accuracy_mean": 0.6037037037037037
+    }
+  },
+  "limitations": [
+    "Locus-specific missingness is not controlled in this preliminary run.",
+    "Run groups are stratified across partitions rather than held out.",
+    "Multiple traces from one biological cell may not be group-split when cell identifiers are unavailable."
+  ]
+}

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "interpretable-chromatin-gnn"
+version = "0.1.0"
+description = "Interpretable bag-level GNN for CTCF-depleted 3D chromatin traces"
+readme = "README.md"
+requires-python = ">=3.13"
+license = {file = "LICENSE"}
+authors = [{name = "Kota Suzuki"}]
+
+[project.scripts]
+chromatin-gnn-train = "chromatin_gnn.training:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

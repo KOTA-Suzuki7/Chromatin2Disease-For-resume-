@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this repository and the source dataset publications listed in the README."
+title: "Interpretable Bag-Level GNN for CTCF-Depleted Chromatin Traces"
+type: software
+authors:
+  - family-names: Suzuki
+    given-names: Kota
+version: 0.1.0
+date-released: 2026-11-17
+license: MIT

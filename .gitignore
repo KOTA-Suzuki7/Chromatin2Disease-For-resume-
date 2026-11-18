@@ -1,0 +1,28 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Downloaded third-party data. Keep data/README.md tracked.
+data/**/*.csv
+
+# Reproducible local training artifacts.
+models/
+results/*_preliminary.json
+results/full_results*.json
+
+# Earlier local experiments that are not part of this public contribution.
+report_draft.md
+scripts/audit_chromatin_coverage.py
+scripts/audit_fof_ct_coverage.py
+scripts/audit_hafner_contact_degrees.py
+scripts/audit_hafner_hop_distances.py
+scripts/audit_hafner_missingness.py
+scripts/find_4dn_s3_keys.py
+scripts/train_interpretable_bag_gnn.py
+scripts/train_interpretable_gat.py
+
